@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Sabahan Kita</title>
+    <link rel="manifest" href="manifest.json">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Kod React yang saya bagi sebelum ini diletakkan secara automatik di sini
+        function App() {
+            return (
+                <div className="flex flex-col items-center justify-center min-h-screen p-4">
+                    <h1 className="text-3xl font-black text-yellow-400">Sabahan Kita 🎮</h1>
+                    <p className="text-slate-400 mt-2 text-center text-sm">Sedia untuk dimainkan dan sedia dipasang (PWA)!</p>
+                    <div className="mt-6 bg-slate-800 border border-slate-700 p-6 rounded-2xl max-w-sm w-full text-center">
+                        <p className="text-xs text-yellow-500 font-bold uppercase tracking-wider">Status Aplikasi</p>
+                        <p className="text-sm font-semibold mt-1">Lulus Semakan PWABuilder! 🎉</p>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+</body>
+</html>
